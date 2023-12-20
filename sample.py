@@ -181,8 +181,8 @@ for i in team_list:
     name_list.append(i[0])
 
 st.subheader('Match information')
-st.write(f'**총 참여자 수:** {len(name_list)}명 (UZT {cnt}명 & 게스트 수 {len(name_list)-cnt}명)')
-st.write(f'**참여자:** {name_list}')
+st.write(f'**:violet[참여인원 {len(name_list):10}명]** (**:blue[UZT {cnt:10}명]** & **:orange[Guest {len(name_list)-cnt}명]**)')
+st.write(f'**:violet[참여자]:** {", ".join(name_list)}')
 st.write(f' ')
 
 col9, col10, col11, col12, col13, col14 = st.columns([2,2,2,1,1,1])
